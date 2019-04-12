@@ -20,6 +20,18 @@
         <router-link to="/event">Event</router-link>
       </b-nav-item>
       <b-nav-item>
+        <router-link to="/component">Component</router-link>
+      </b-nav-item>
+      <b-nav-item>
+        <router-link to="/props">Props</router-link>
+      </b-nav-item>
+      <b-nav-item>
+        <router-link to="/slots">Slots</router-link>
+      </b-nav-item>
+      <b-nav-item>
+        <router-link to="/ajax">Ajax</router-link>
+      </b-nav-item>
+      <b-nav-item>
         <router-link to="/login">Login Page</router-link>
       </b-nav-item>
     </b-nav>

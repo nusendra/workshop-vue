@@ -1,5 +1,5 @@
 <template>
   <div>
-    <span>Halaman Home</span>
+    <h4>Ini adalah Child Component</h4>
   </div>
 </template>

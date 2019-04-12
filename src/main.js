@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
+import Axios from 'axios';
+
 import App from './App.vue';
 import router from './router';
 import store from './store';
@@ -15,6 +17,9 @@ Vue.component('login', Login);
 
 Vue.use(BootstrapVue);
 Vue.config.productionTip = false;
+
+// Global Axios
+Vue.prototype.axios = Axios;
 
 new Vue({
   router,
