@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <input v-model='awal' type='number'/> +
+    <input v-model='akhir' type='number'> =
+    <span>{{ hasilJumlah }}</span>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
-
 export default {
   name: 'home',
-  components: {
-    HelloWorld,
+  data: () => ({
+    awal: 0,
+    akhir: 0,
+  }),
+  computed: {
+    hasilJumlah() {
+      return parseInt(this.awal, 0) + parseInt(this.akhir, 0);
+    },
   },
 };
 </script>
